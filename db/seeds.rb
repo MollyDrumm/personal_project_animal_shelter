@@ -14,19 +14,23 @@ owner4 = Owner.new({'name' => 'Jess Cow'})
 animal1 = Animal.new({
   'name' => 'Toad',
   'breed' => 'Cat',
-  'adoptable' => 'Ready for adoption' })
+  'adoptable' => 'Ready for adoption',
+  'admission_date' => '12/6/18' })
 
 animal2 = Animal.new({
   'name' => 'Chip',
   'breed' => 'Dog',
-  'adoptable' => 'Not ready for adoption' })
+  'adoptable' => 'Not ready for adoption',
+  'admission_date' => '20/7/18' })
 
 animal3 = Animal.new({
   'name' => 'Ziggy',
   'breed' => 'Horse',
-  'adoptable' => 'Not ready for adoption' })
+  'adoptable' => 'Not ready for adoption',
+  'admission_date' => '24/7/18' })
 
 animal4 = Animal.new({
   'name' => 'Boris',
   'breed' => 'Dog',
-  'adoptable' => 'Ready for adoption' })
+  'adoptable' => 'Ready for adoption',
+  'admission_date' => '2/5/18' })
