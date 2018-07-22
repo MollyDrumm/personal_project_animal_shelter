@@ -6,10 +6,10 @@ owner2 = Owner.new({'name' => 'Anna Hutchy'})
 owner3 = Owner.new({'name' => 'Faye Brioche'})
 owner4 = Owner.new({'name' => 'Jess Cow'})
 
-# owner1.save
-# owner2.save
-# owner3.save
-# owner4.save
+owner1.save
+owner2.save
+owner3.save
+owner4.save
 
 animal1 = Animal.new({
   'name' => 'Toad',
@@ -34,3 +34,8 @@ animal4 = Animal.new({
   'breed' => 'Dog',
   'adoptable' => 'Ready for adoption',
   'admission_date' => '2/5/18' })
+
+animal1.save
+animal2.save
+animal3.save
+animal4.save
