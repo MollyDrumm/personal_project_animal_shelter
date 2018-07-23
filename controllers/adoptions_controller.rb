@@ -8,7 +8,7 @@ also_reload('../models/*')
 
 
 
-get '/adoption' do
+get '/adoption/index' do
   @adoptions = Adoption.all
   erb ( :"adoption/index" )
 end
@@ -21,7 +21,6 @@ end
 
 
 post '/adoption' do
-  puts params
   @adoption = Adoption.new(params)
   @adoption.save()
   erb ( :"adoption/create" )
