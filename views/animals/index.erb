@@ -1,0 +1,10 @@
+<p>Here's a list of all our animals in the Shelter</p>
+
+<% for animal in @animals %>
+
+  <p><%= animal.name() %></p>
+
+  <p> <a href="/animals/<%=animal.id%>"> Show Details </a> </p>
+
+
+<% end%>

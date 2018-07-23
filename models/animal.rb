@@ -3,7 +3,7 @@ require('date')
 
 class Animal
 
-  attr_reader :id, :name
+  attr_reader :id, :name, :breed, :adoptable, :admission_date
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
@@ -55,7 +55,7 @@ class Animal
   def self.all()
     sql = "SELECT * FROM animals"
     animal_data = SqlRunner.run(sql)
-    aniamls = map_items(animal_data)
+    animals = map_items(animal_data)
     return animals
   end
 

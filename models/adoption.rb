@@ -23,4 +23,34 @@ class Adoption
     results = SqlRunner.run(sql, values)
     @id = results.first()['id'].to_i
   end
+
+
+  def self.all()
+    sql = "SELECT * FROM adoptions"
+    results = SqlRunner.run( sql )
+    return results.map { |adoption| Adoption.new( adoption ) }
+  end
+
+  def animal()
+    sql = "SELECT * FROM animals
+    WHERE id = $1"
+    values = [@animal_id]
+    results = SqlRunner.run( sql, values )
+    return Animal.new( results.first )
+  end
+
+  def owner()
+    sql = "SELECT * FROM owners
+    WHERE id = $1"
+    values = [@owner_id]
+    results = SqlRunner.run( sql, values )
+    return Owner.new( results.first )
+  end
+
+  def self.destroy(id)
+     sql = "DELETE FROM adoptions
+     WHERE id = $1"
+     values = [id]
+     SqlRunner.run( sql, values )
+  end
 end
