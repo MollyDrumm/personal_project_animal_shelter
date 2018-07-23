@@ -22,9 +22,7 @@ get '/animals/:id' do
   erb ( :"animals/show" )
 end
 
-get '/owners' do
-  "Hello World"
-end
+
 # new
 
 # create

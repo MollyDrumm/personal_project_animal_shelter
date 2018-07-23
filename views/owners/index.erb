@@ -1,0 +1,9 @@
+<p>Here's a list of all our potential owners</p>
+
+<% for owner in @owners %>
+
+  <p><%= owner.name() %></p>
+
+<% end%>
+
+<p> <a href="/owner/new"> Add a new owner </a> </p>

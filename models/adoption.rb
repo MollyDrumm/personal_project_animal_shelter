@@ -2,6 +2,8 @@ require_relative('../db/sql_runner')
 
 class Adoption
 
+  attr_reader :id, :owner_id, :animal_id
+
   def initialize(options)
     @id = options['id'].to_i
     @owner_id = options['owner_id'].to_i
