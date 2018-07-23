@@ -1,4 +1,5 @@
 require_relative('../db/sql_runner')
+require('date')
 
 class Animal
 
@@ -9,7 +10,7 @@ class Animal
     @name = options['name']
     @breed = options['breed']
     @adoptable = options['adoptable']
-    @admission_date = options['admission_date'].to_i
+    @admission_date = Date.parse(options['admission_date'])
   end
 
   def save()

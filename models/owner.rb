@@ -45,4 +45,11 @@ class Owner
   def self.map_items(owner_data)
     return owner_data.map { |owner| Owner.new(owner) }
   end
+
+  def delete()
+    sql = "DELETE FROM owners
+    WHERE id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
 end

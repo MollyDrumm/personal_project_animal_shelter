@@ -9,3 +9,17 @@ also_reload('./models/*')
 get '/' do
   erb( :home )
 end
+
+# index
+
+# show
+
+# new
+
+# create
+
+# edit
+
+# update
+
+# destroy
