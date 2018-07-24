@@ -24,8 +24,17 @@ end
 
 
 # new
+get '/animal/new' do
+  @animals = Animal.all
+  erb ( :"animals/new")
+end
 
 # create
+post '/animals' do
+  new_animal = Animal.new(params)
+  new_animal.save()
+  redirect to("/animals")
+end
 
 # edit
 

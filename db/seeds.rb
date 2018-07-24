@@ -2,10 +2,10 @@ require_relative('../models/animal')
 require_relative('../models/owner')
 require_relative('../models/adoption')
 
-owner1 = Owner.new({'name' => 'Kirsty Fergatron',})
-owner2 = Owner.new({'name' => 'Anna Hutchy'})
-owner3 = Owner.new({'name' => 'Faye Brioche'})
-owner4 = Owner.new({'name' => 'Jess Cow'})
+owner1 = Owner.new({'first_name' => 'Kirsty', 'last_name' => 'Fergatron'})
+owner2 = Owner.new({'first_name' => 'Anna', 'last_name' => 'Hutchy'})
+owner3 = Owner.new({'first_name' => 'Faye', 'last_name' => 'Brioche'})
+owner4 = Owner.new({'first_name' => 'Jess', 'last_name' => 'Cow'})
 
 owner1.save
 owner2.save

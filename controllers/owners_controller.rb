@@ -15,3 +15,9 @@ get '/owner/new' do
   @owners = Owner.all
   erb ( :"owners/new")
 end
+
+post '/owners' do
+  new_owner = Owner.new(params)
+  new_owner.save()
+  redirect to("/owners")
+end
