@@ -1,0 +1,33 @@
+body {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #353866;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  color:#F8FAFF;
+  text-align: center;
+  font-size: 60px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #AAABD3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
