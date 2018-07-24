@@ -49,6 +49,11 @@ class Adoption
     return Owner.new( results.first )
   end
 
+  def self.delete_all()
+  sql = "DELETE FROM adoptions"
+  SqlRunner.run( sql )
+end
+
   def self.destroy(id)
      sql = "DELETE FROM adoptions
      WHERE id = $1"

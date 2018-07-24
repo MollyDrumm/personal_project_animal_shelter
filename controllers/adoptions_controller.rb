@@ -23,5 +23,11 @@ end
 post '/adoption' do
   @adoption = Adoption.new(params)
   @adoption.save()
+  #get the animal that was adopted
+  @animal = Animal.find( params['animal_id'].to_i )
+  #change that animals status to 'adopted'
+  @animal.adoptable = "Adopted"
+  #update that animal on db
+  @animal.update()
   erb ( :"adoption/create" )
 end

@@ -4,7 +4,8 @@ require('date')
 class Animal
 
   attr_reader :id, :name, :breed, :adoptable, :admission_date
-
+  attr_writer :adoptable
+  
   def initialize(options)
     @id = options['id'].to_i if options['id']
     @name = options['name']
@@ -71,6 +72,11 @@ class Animal
     animal = Animal.new(result)
     return animal
   end
+
+  def self.delete_all()
+  sql = "DELETE FROM animals"
+  SqlRunner.run( sql )
+end
 
   def delete()
     sql = "DELETE FROM animals
