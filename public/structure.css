@@ -12,19 +12,22 @@ h1 {
   color:#F8FAFF;
   text-align: center;
   font-size: 60px;
+  font-weight: lighter;
+  margin-bottom: 100px;
 }
 
 h2 {
   color: white;
+  font-weight: lighter;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   color: #F8FAFF;
   font-family: sans-serif;
   font-weight: lighter;
   margin-bottom: 50px;
-  
+
 }
 
 nav ul {
@@ -65,4 +68,11 @@ p a {
 }
  p a:hover {
    color: #CBA6C3;
+ }
+
+
+ #content {
+   padding-left: 25px;
+   padding-right: 25px;
+   margin-top: 50px;
  }

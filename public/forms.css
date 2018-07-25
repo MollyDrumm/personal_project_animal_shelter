@@ -1,4 +1,4 @@
-input[type=text], input[type=date] {
+input[type=text] {
     width: 20%;
     padding: 3px 5px;
     margin: 8px 0;
@@ -7,12 +7,12 @@ input[type=text], input[type=date] {
     margin-top: 20px;
     margin-left: 10px;
 }
+input[type=date] {
+   width: 20%;
+   border-radius: 4px;
+ }
 
-
-
-
-
- select {
+select {
     width: 20%;
     padding: 10px 16px;
     border: none;
@@ -33,5 +33,9 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     border-radius: 7%;
     font-size: 15px;
+}
+
+div {
+  margin-top: 50px;
 
 }
