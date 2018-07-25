@@ -1,28 +1,29 @@
 
-<h2>Adoption Form</h2>
+<h3>Adoption Form</h3>
 
-<div>
-  <form action="/adoption" method="post">
-    <label>
-    <p>Select an owner:
+<div class="form">
+  <form action="/adoption" method="post" class="add-form">
+    <div class="select-form">
+    <label for "Select an owner">Select an owner</label>
       <select name="owner_id">
         <% for owner in @owners %>
         <option value="<%= owner.id %>"><%= owner.full_name %></option>
         <% end %>
-      </select></p>
-    </label>
-  <br>
-    <label>
-      <p>Select an animal:
+      </select>
+
+
+    <label for="Select an animal">Select an animal</label>
       <select name="animal_id">
         <% for animal in @animals %>
           <% if animal.adoptable == "Ready for adoption" %>
           <option value="<%= animal.id %>"><%= animal.name %></option>
           <% end %>
         <% end %>
-      </select></p>
-    </label>
-  <br>
+      </select>
+
+      <label for="Date of adoption">Date of adoption</label>
+      <input type="date" name="adoption_date">
+    </div>
     <input class="btn btn--action" type='submit' value="adopt!">
   </form>
 </div>

@@ -30,6 +30,10 @@ h3 {
 
 }
 
+nav {
+  min-width: 703px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;

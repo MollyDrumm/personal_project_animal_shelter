@@ -19,5 +19,6 @@ CREATE TABLE owners (
 CREATE TABLE adoptions (
   id SERIAL8 primary key,
   animal_id INT8 REFERENCES animals(id),
-  owner_id INT8 REFERENCES owners(id)
+  owner_id INT8 REFERENCES owners(id),
+  adoption_date DATE
 );

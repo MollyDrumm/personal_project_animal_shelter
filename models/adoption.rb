@@ -2,26 +2,28 @@ require_relative('../db/sql_runner')
 
 class Adoption
 
-  attr_reader :id, :owner_id, :animal_id
+  attr_reader :id, :owner_id, :animal_id, :adoption_date
 
   def initialize(options)
     @id = options['id'].to_i
     @owner_id = options['owner_id'].to_i
     @animal_id = options['animal_id'].to_i
+    @adoption_date = Date.parse(options['adoption_date'])
   end
 
   def save()
     sql = "INSERT INTO adoptions
     (
       animal_id,
-      owner_id
+      owner_id,
+      adoption_date
     )
     VALUES
     (
-      $1, $2
+      $1, $2, $3
     )
     RETURNING id"
-    values = [@animal_id, @owner_id]
+    values = [@animal_id, @owner_id, @adoption_date]
     results = SqlRunner.run(sql, values)
     @id = results.first()['id'].to_i
   end
@@ -54,7 +56,7 @@ class Adoption
   SqlRunner.run( sql )
 end
 
-  def self.destroy(id)
+  def self.delete(id)
      sql = "DELETE FROM adoptions
      WHERE id = $1"
      values = [id]

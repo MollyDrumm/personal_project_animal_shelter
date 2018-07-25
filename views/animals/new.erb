@@ -1,16 +1,23 @@
 <h3>New Animal</h3>
 
-<div>
-  <form action="/animals" method="post">
-    <p>Name:
-    <input type="text" name="name"><br></p>
-    <p>Breed:
-    <input type="text" name="breed"><br></p>
-    <p>Adoptable:
-    <input type="text" name="adoptable"><br><p>
-    <p>Admission date:
-    <input type="date" name="admission_date"><br><p>
+<div class="form">
+  <form action="/animals" method="post" class="add-form">
+    <div class="input-form">
+      <label for="name">Name</label>
+      <input type="text" name="name">
 
+      <label for="breed">Breed</label>
+      <input type="text" name="breed">
+
+      <label for="adoptable">Adoptable</label>
+      <select  name="adoptable">
+        <option value="Ready for adoption">Ready for adoption</option>
+        <option value="Not ready for adoption">not ready for adoption</option>
+      </select>
+
+      <label for="admission_date">Admission date</label>
+      <input type="date" name="admission_date">
+    </div>
     <input class="btn btn--action" type='submit' value="Add">
   </form>
 </div>

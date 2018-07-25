@@ -1,5 +1,5 @@
 <% for adoption in @adoptions %>
 
-  <p><%= Owner.find(adoption.owner_id).full_name %> has adopted <%= Animal.find(adoption.animal_id).name %></p>
+  <p><%= Owner.find(adoption.owner_id).full_name %> has adopted <%= Animal.find(adoption.animal_id).name %> on <%= adoption.adoption_date %></p>
 
 <% end %>
