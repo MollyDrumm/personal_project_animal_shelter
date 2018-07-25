@@ -59,6 +59,15 @@ input[type=button], input[type=submit], input[type=reset] {
   grid-gap: 20px;
 }
 
+.new-owner label {
+  margin: 0 20px;
+}
+.new-owner input {
+  margin: 10px 0;
+  width: 25%;
+  padding: 5px;
+}
+
 label {
   text-align: left;
   color: white;
