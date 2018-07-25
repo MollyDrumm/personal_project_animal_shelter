@@ -1,11 +1,14 @@
 <h3>New Owner</h3>
 
-<div>
+<div class="form">
   <form action="/owners" method="post">
-    <p>First name:
-    <input type="text" name="first_name"><br></p>
-    <p>Last name:
-    <input type="text" name="last_name"></br></p>
+    <div class="new-owner">
+      <label for="first_name">First name</label>
+      <input type="text" name="first_name"><br>
+
+      <label for="last_name">Last name</label>
+      <input type="text" name="last_name">
+    </div>
     <input class="btn btn--action" type='submit' value="Add">
   </form>
 </div>
