@@ -13,7 +13,9 @@ CREATE TABLE animals (
 CREATE TABLE owners (
   id SERIAL8 primary key,
   first_name VARCHAR(255),
-  last_name VARCHAR(225)
+  last_name VARCHAR(225),
+  email VARCHAR(225),
+  address VARCHAR(225)
 );
 
 CREATE TABLE adoptions (
