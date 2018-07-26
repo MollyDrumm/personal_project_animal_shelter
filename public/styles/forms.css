@@ -1,28 +1,9 @@
-/* input[type=text] {
-    width: 20%;
-    padding: 3px 5px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 30px;
-    align-content: space-around;
-} */
-/* input[type=date] {
-   width: 20%;
-   border-radius: 4px;
-   margin-right: 30px;
- } */
 
 select {
-    /* width: 20%; */
     padding: 10px 16px;
     border: none;
     border-radius: 4px;
     background-color: #f1f1f1;
-    /* margin-top: 20px;
-    margin-left: 10px; */
 }
 
 input[type=button], input[type=submit], input[type=reset] {

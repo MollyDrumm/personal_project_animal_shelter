@@ -6,6 +6,5 @@ require_relative('controllers/adoptions_controller')
 
 
 get '/' do
-  # erb( :index )
   redirect to "/animals"
 end
